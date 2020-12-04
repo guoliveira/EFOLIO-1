@@ -95,10 +95,10 @@ int validar_movimento_peca(char *origem, char *destino, char tabuleiro[]){
     else 
         switch(tabuleiro[de_int])
         {
-          case '.':
+        case '.':
             return 0;
             break;
-          case 'p':
+        case 'p':
             if (tabuleiro[para_int]=='R')
                 return -1;
             else if (tabuleiro[para_int]=='P'&&(diagonal[0]==0||diagonal[1]==0)&&(de_int-para_int<8&&para_int-de_int<8))
@@ -138,7 +138,7 @@ int validar_movimento_peca(char *origem, char *destino, char tabuleiro[]){
             else
                 return 0;
             break;
-        }
+    }
        
 return 1;
 }
